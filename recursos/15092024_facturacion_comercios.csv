@@ -1,0 +1,5 @@
+id_facturacion,fecha_facturacion,commerce_nit,commerce_name,commerce_email,successful_requests,failed_requests,comisiones,comi_con_descuento,valor_cobrado_por_iva,total_facturado
+2024091601,2024-09-16,28960112,Zenith Corp.,zenithcorp.@gemaily.net,40808,10084,5305040,5039788.0,957559.72,5997347.72
+2024091602,2024-09-16,198818316,QuantumLeap Inc.,quantumleapinc.@gemaily.net,40535,10300,24321000,24321000.0,4620990.0,28941990.0
+2024091603,2024-09-16,452680670,NexaTech Industries,nexatechindustries@gemaily.net,40745,10059,6926650,6926650.0,1316063.5,8242713.5
+2024091604,2024-09-16,919341007,FusionWave Enterprises,fusionwaveenterprises@microfitsof.com,40668,10232,12200400,11224368.0,2132629.92,13356997.92

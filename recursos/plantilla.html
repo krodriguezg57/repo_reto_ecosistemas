@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correo con Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Opcional: tu propio CSS -->
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            padding: 20%;
+         
+        }
+        .content {
+            padding: 20px; /* Padding alrededor del contenido */
+        }
+        .table-responsive {
+            margin: 0 auto; /* Centra la tabla horizontalmente */
+        }
+        table {
+            width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+        }
+        th, td {
+            text-align: center; /* Centra el texto dentro de las celdas */
+        }
+        .header img, .footer img {
+            width: 100%; /* Ajusta la imagen para que ocupe el ancho del contenedor */
+            height: auto;
+        }
+        .footer p {
+            margin-top: 20px;
+        }
+        .text-center {
+            text-align: center; /* Centra el texto dentro de los elementos */
+        }
+        .centrado {
+            border-radius: 5px; /* Bordes redondeados para el contenido */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra ligera */
+            padding: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header text-center">
+            <img src="https://mir-s3-cdn-cf.behance.net/d0b90c47437d8dd3b9542b9fc444d74a/688cc009-e41c-439a-9ea6-2eeba3339073_rwc_83x0x2794x420x2880.jpg?h=d09d9e1ca5029e056c407c54463866d7" alt="Encabezado de Correo">
+        </div>
+        <hr>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-6">
+                <div class="centrado content text-center">
+                    <div>
+                        <h1>¡Hola, [NOMBRE_DEL_CLIENTE]!</h1>
+                        <p>Esperamos que se encuentre bien.</p>
+                        <p>Adjunto a este correo encontrará la factura y las transacciones correspondientes a las llamados de Api generados en el período de [PERIODO]. A continuación, le presentamos un desglose detallado de los conceptos incluidos en esta factura:</p>
+                        <div class="table-responsive mt-5">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">identificacion facturacion</th>
+                                        <th scope="col">fecha facturacion</th>
+                                        <th scope="col">Descripción</th>
+                                        <th scope="col">Comisiones</th>
+                                        <th scope="col">IVA (19%)</th>
+                                        <th scope="col">Total Facturado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>[id_facturacion]</td>
+                                        <td>[fecha_facturacion]</td>
+                                        <td>Cobro por servicio de BATSEJ OPEN FINANCE S.A</td>
+                                        <td>[VALOR_COMISIONES]</td>
+                                        <td>[VALOR_IVA]</td>
+                                        <td>[TOTAL_FACTURADO]</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Le solicitamos que realice el pago correspondiente a más tardar finalizando el mes. Para cualquier consulta o aclaración, no dude en ponerse en contacto con nosotros.</p>
+                        <p>Agradecemos su pronta atención a este asunto.</p>
+                    </div>
+                    
+                    <p>Atentamente,</p>
+                    <p>Karen Estefania Rodriguez Garcia <br> Auxiliar Administrativo<br>Bancolombia<br>3155191968<br>karerod@bancolombia.com.co</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer text-center">
+            <p class="text-secondary">Este correo es generado automáticamente. Por favor, no responda a este mensaje.</p>
+            <img src="https://mir-s3-cdn-cf.behance.net/d0b90c47437d8dd3b9542b9fc444d74a/688cc009-e41c-439a-9ea6-2eeba3339073_rwc_83x0x2794x420x2880.jpg?h=d09d9e1ca5029e056c407c54463866d7" alt="Footer de Correo">
+        </div>
+    </div>
+</body>
+</html>
